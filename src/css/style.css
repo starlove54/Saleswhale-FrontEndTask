@@ -1,0 +1,459 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* app */
+.main {
+  /* background-color: #e5e5e5; */
+}
+
+.main-sidenav-navbar {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.main-teams-activity {
+}
+
+/* sidenav */
+.sidenav {
+  background: #042235;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5),
+    inset -4px 0px 4px rgba(2, 15, 24, 0.569466);
+  width: 5rem;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.sidenav-icons-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3.25rem;
+  padding-top: 1.59rem;
+}
+
+.sidenav-icons-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 1.6875rem;
+}
+
+.square {
+  background: #2995da;
+  width: 4.75rem;
+  height: 5rem;
+  position: absolute;
+  top: 10rem;
+  z-index: -1;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 14.125rem;
+  background: #ffffff;
+}
+
+.navbar-upperbar {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-right: 5rem;
+}
+
+.navbar-upperbar-1stitem {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin-left: 2.5625rem;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.navbar-upperbar-2nditem {
+  margin-left: 4.25rem;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #000000;
+}
+
+.navbar-verticalline {
+  position: absolute;
+  transform: rotate(90deg);
+  background: #ffffff;
+  border: 0.0625rem solid #e2e2e2;
+  margin-left: 7.375rem;
+  width: 6.25rem;
+  top: 2.8125rem;
+}
+
+.navbar-upperbar-3rditem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline-start: auto;
+  gap: 0.9375rem;
+}
+
+.navbar-greetings {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  color: #000000;
+}
+
+.navbar-breakline {
+  margin-top: 1.625rem;
+  background: #ffffff;
+  border: 0.0625rem solid #e2e2e2;
+}
+
+.navbar-lowerbar-upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.9375rem;
+}
+
+.navbar-lowerbar-upper-1stitem {
+  margin-left: 2.625rem;
+  color: #a4a6a8;
+}
+
+.navbar-lowerbar-upper-2nditem {
+  margin-left: 0.578125rem;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #1a1919;
+}
+
+.navbar-lowerbar-upper-3rditem {
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #40d2bf;
+  border-radius: 0.25rem;
+  width: 11.8125rem;
+  height: 2.25rem;
+  border: 0;
+}
+
+.navbar-button-plusicon {
+  margin-right: 1.3125rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.navbar-button-text {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #ffffff;
+}
+
+.navbar-lowerbar-below {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+.navbar-lowerbar-below-1stitem {
+  cursor: pointer;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #000000;
+  margin-left: 3.875rem;
+}
+
+.navbar-lowerbar-below-2nditem {
+  cursor: pointer;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #000000;
+  margin-left: 3.625rem;
+}
+
+.navbar-lowerbar-below-3rditem {
+  cursor: pointer;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #000000;
+  margin-right: auto;
+  margin-left: 2.625rem;
+}
+
+.navbar-lowerbar-below-4thitem {
+  width: 0.6875rem;
+  height: 0.6875rem;
+  margin-right: 0.9375rem;
+}
+
+.navbar-lowerbar-below-5thitem {
+  margin-right: 6.625rem;
+}
+
+.navbar-input-search {
+  border-style: hidden;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #999999;
+}
+
+.navbar-lowerbar-below-selected {
+  color: #0083e3;
+  border-bottom: #0083e3 2px solid;
+}
+
+/* teams component  */
+.teams-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  width: 1308px;
+  /* height: 100%; */
+  padding-bottom: 10px;
+  position: relative;
+  margin-left: 122px;
+  margin-top: -680px;
+}
+
+.teams-uppertext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.teams-uppertext-titletext {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #000000;
+  padding-left: 1.875rem;
+}
+
+.teams-uppertext-infotext {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #7f7f7f;
+  padding-right: 1.875rem;
+}
+
+.teams-breakline {
+  margin-top: 18px;
+  border: 1px solid #efefef;
+}
+
+.teams-cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30.5px;
+  margin-left: 27.5px;
+  gap: 13px;
+}
+
+/* card component */
+.card-wrapper {
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 4px;
+  width: 307px;
+  height: 181px;
+}
+
+.card-company-image {
+  float: left;
+  width: 36px;
+  height: 36px;
+  margin-left: 17px;
+}
+
+/* .card-top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.card-company-name {
+  margin-left: auto;
+  margin-top: 17px;
+  margin-left: 61px;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.card-star-default {
+  position: relative;
+  left: 220px;
+  bottom: 20px;
+}
+
+.card-star-active {
+  position: relative;
+  left: 220px;
+  bottom: 20px;
+}
+
+.card-company-created-or-archived {
+  position: relative;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #565656;
+  margin-left: 61px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  bottom: 16.27px;
+}
+
+.card-text {
+  /* margin-top: 17px; */
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #565656;
+  margin-left: 15px;
+  max-width: 270px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block; /* or inline-block */
+  max-height: 2.6em;
+}
+
+.card-breakline {
+  margin-top: 15px;
+  border: 1px solid #e4e7ec;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.card-bottom-campaign-image {
+  margin-left: 17px;
+}
+.card-bottom-campaign-text {
+  margin-left: 10px;
+}
+
+.card-bottom-leads-image {
+  margin-left: 10px;
+}
+
+.card-bottom-leads-text {
+  margin-left: 10px;
+}
+
+.card-bottom-text {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  mix-blend-mode: normal;
+  opacity: 0.45;
+}
+
+/* activity component */
+.activity-wrapper {
+  background: #ffffff;
+  width: 19.75rem;
+  /* height: 28.75rem; */
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 0px 30px rgba(0, 0, 0, 0.1);
+  margin-left: 1520px;
+  margin-top: -680px;
+  padding-bottom: 35px;
+}
+
+.activity-title {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #343434;
+  padding-top: 1.8125rem;
+  padding-left: 1.8125rem;
+}
+
+.activity-breakline {
+  /* border: 0.0625rem solid #efefef; */
+  border: 1px solid #efefef;
+  margin-top: 1.0625rem;
+}
+
+.activity-images {
+  float: left;
+  border-radius: 1.125rem;
+  height: 2.25rem;
+  width: 2.25rem;
+  margin-left: 1.8125rem;
+}
+
+.activity-firsttext {
+  margin-top: 1.8125rem;
+}
+
+.activity-text-placement {
+  margin-left: 4.625rem;
+  max-width: 10.5rem;
+}
+
+.activity-notifications {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #444444;
+}
+
+.activity-time {
+  font-family: "Proxima Nova ", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: #565656;
+  opacity: 0.5;
+  margin-top: 0.3125rem;
+}
+
+.activity-alltext-exceptfirst {
+  margin-top: 0.9375rem;
+}
+
+.activity-bold {
+  font-weight: 600;
+  font-style: bolder;
+  /* font-size: small; */
+}
